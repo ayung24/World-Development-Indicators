@@ -47,8 +47,10 @@ Inequality is, sadly, pervasive throughout all domains of life - and countries a
 
 The data visualization for this project leverages data consolidated from the World Bank and seeks to allow users to explore the different regions of the world and see how well they do in different areas of development as compared to a global average. Furthermore, we hope to allow users to investigate similarities or discrepancies between different areas of the world by juxtapositioning countries of interest in terms of indicators of development. 
 
-Demo:
- - <img src="https://media.github.students.cs.ubc.ca/user/3011/files/3527bb80-9d46-11eb-94e2-41636a897483" width="700px">
+Screenshots:
+ - <img width="1391" alt="Screen Shot 2021-05-01 at 3 57 20 PM" src="https://user-images.githubusercontent.com/25242618/116797013-f6a83580-aa95-11eb-8db2-a00d726a628a.png">
+ - <img width="1443" alt="Screen Shot 2021-05-01 at 3 56 51 PM" src="https://user-images.githubusercontent.com/25242618/116797014-fad45300-aa95-11eb-9be4-cb8ba0009314.png">
+
 
 ## Dataset
 ### Sources
