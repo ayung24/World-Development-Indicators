@@ -1,0 +1,24 @@
+g.axis.y-axis.slider g.tick > text {
+  text-anchor: end;
+  fill: black;
+  font-size: 10px;
+} 
+
+/* Axes */
+.y-axis line {
+  fill: none;
+  stroke: #8693a0;
+  shape-rendering: crispEdges;
+}
+.y-axis text {
+  font-size: 13px;
+  fill: black;
+}
+
+.y-axis .domain {
+  stroke: #8693a0;
+}
+
+#slider {
+  overflow: visible;
+}

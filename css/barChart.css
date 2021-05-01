@@ -1,0 +1,110 @@
+/** Styles specific to barChart, which overrides common classes */
+
+#barchart {
+  margin-bottom: 25px;
+}
+
+/** Axes */
+.x-axis-barchart line {
+  visibility: hidden;
+}
+
+.y-axis-barchart line {
+  stroke: grey;
+  opacity: 0.7;
+}
+
+#barchart .axis-title {
+  font-size: 1.3rem;
+}
+
+#barchart .axis text {
+  font-size: 2em;
+}
+
+/** Legend items */
+#barchart .legend-box {
+  width: 20px;
+  height: 20px;
+}
+
+.legend-box-SelectedCountry {
+  transform: translate(0px, -10px);
+}
+
+.box-label {
+  font-size: 1.5rem;
+}
+
+.box-label-SelectedCountry {
+  transform: translate(10px, 0px);
+}
+
+.box-label-OtherCountries {
+  transform: translate(10px, 10px);
+}
+
+/* -------------------  Bigger Screens -----------------------*/
+@media only screen and (min-width: 1300px) and (max-width: 1749px) {
+  #barchart .axis-title {
+    font-size: 1.7em;
+  }
+
+  #barchart .axis text {
+    font-size: 1.3em;
+  }
+
+  /** Legend items */
+  #barchart .legend-box {
+    width: 15px;
+    height: 15px;
+  }
+
+  .legend-box-SelectedCountry {
+    transform: translate(0px, -3px);
+  }
+
+  .box-label {
+    font-size: 1rem;
+  }
+
+  .box-label-SelectedCountry {
+    transform: translate(3px, 0px);
+  }
+
+  .box-label-OtherCountries {
+    transform: translate(3px, 4px);
+  }
+}
+
+@media only screen and (min-width: 1750px) {
+  #barchart .axis-title {
+    font-size: 1.5em;
+  }
+
+  #barchart .axis text {
+    font-size: 0.8rem;
+  }
+
+  /** Legend items */
+  #barchart .legend-box {
+    width: 10px;
+    height: 10px;
+  }
+
+  .legend-box-SelectedCountry {
+    transform: translate(0px, 5px);
+  }
+
+  .box-label {
+    font-size: 0.8rem;
+  }
+
+  .box-label-SelectedCountry {
+    transform: translate(-3px, 5px);
+  }
+
+  .box-label-OtherCountries {
+    transform: translate(-3px, -1px);
+  }
+}

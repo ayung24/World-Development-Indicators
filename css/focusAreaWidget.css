@@ -1,0 +1,71 @@
+/** Select Focus Area ***/
+ #select-focus {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 15px;
+  }
+  
+  #country-selector-container {
+    font-size: 0.8rem;
+  }
+  
+  #country-selector {
+    width: 200px;
+  }
+  
+  #region-selector-container {
+    width: 100%;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .radio-button {
+    vertical-align: bottom;
+    cursor: pointer;
+  }
+
+  .radio-option {
+    margin-right: 15px;
+  }
+  
+  .radio-label {
+    margin-left: 5px;
+    font-size: 0.7rem;
+    vertical-align: text-bottom;
+    cursor: pointer;
+  }
+
+   /* -------------------  Bigger Screens -----------------------*/
+   @media only screen and (min-width: 1677px){
+    #select-focus {
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+  
+    #country-selector-container {
+      font-size: 0.8em;
+      align-self: center;
+    }
+  
+    #region-selector-container {
+      width: 80%;
+      margin-left: 20px;
+      font-size: 0.8em;
+      display: flex;
+      align-self: center;
+      margin-bottom: 0px;
+    }
+  
+    .radio-option {
+      margin-right: 15px;
+    }
+  
+    .radio-label {
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+  }

@@ -1,0 +1,175 @@
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(255, 248, 230, 0.5);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+}
+
+#landing, #viz {
+  will-change: transform;
+  position: relative;
+}
+
+#landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+#viz {
+  overflow-y: auto;
+  height: 100%; 
+  background: white;
+}
+
+#intro-text {
+  margin: 40px 120px 40px 120px;
+}
+
+#next-btn {
+  border: 1px solid grey;
+  border-radius: 37px;
+  width: 140px;
+  height: 55px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#next-btn:hover, #next-btn:focus {
+  background-color: #1b823a;
+  color: white;
+}
+
+/** Chart Positioning */
+#parent-container {
+  margin: 15px;
+  display: flex;
+  flex-flow: column;
+}
+
+#project-title {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+#chart-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#left-col {
+  margin-right: 2%;
+}
+
+#middle-col {
+  float: left;
+  width: 40%;
+}
+
+#right-col {
+  width: 48%;
+  margin-left: 4%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h6.sub-title {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 1rem;
+}
+
+/** Axes */
+.axis-title {
+    font-weight: bold;
+}
+
+/** Tooltip */
+#tooltip { 
+  position: absolute;
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 2000;
+}
+
+#tooltip[display="false"] { 
+  display: none;
+}
+
+/** Other */
+.material-icons {
+  font-size: 15px;
+}
+
+#backBtn {
+  position: absolute;
+  bottom: 1vh;
+  right: 3vh;
+  height: 45px;
+  width: 45px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 19px;
+  color: black;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+#backBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+#backBtn:focus {
+  border: none;
+  outline: none;
+}
+
+*:focus {
+  outline: 0;
+  outline: none;
+}
+
+/* -------------------  Bigger Screens -----------------------*/
+@media only screen and (min-width: 1750px) {
+  #viz {
+    overflow-y: hidden;
+  }
+}

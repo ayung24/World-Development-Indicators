@@ -1,0 +1,88 @@
+div[selected="true"] {
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: black;
+}
+
+div[selected="true"] .c-arc[num="0"] {
+  fill: green;
+}
+
+.c-arc[num="0"] {
+  fill: #ee4266;
+  border: 2px solid rgb(200, 200, 200);
+  opacity: 1;
+}
+
+.w-arc[num="0"] {
+  fill: black;
+  opacity: 1;
+}
+
+#wedges {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.wedge-group-container {
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.wedge-container {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.wedge-label {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre-line;
+  text-align: center;
+  cursor: pointer;
+}
+
+.indicator-container {
+  font-size: 0.6em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.indicator-container svg {
+  align-items: baseline;
+  cursor: pointer;
+}
+
+.indicator-container svg path {
+  fill: none;
+}
+
+/**--------------- Bigger Screens -----------------**/
+@media only screen and (min-width: 1450px) {
+  #demographics {
+    width: 43%;
+    margin-right: 25px;
+  }
+
+  #economic {
+    width: 45%;
+    margin-right: 0px;
+  }
+
+  #wedges strong {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+  }
+
+  .indicator-container {
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+}

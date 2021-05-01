@@ -1,0 +1,129 @@
+
+body {
+  font: 10px sans-serif;
+}
+
+#linechart {
+  overflow: visible;
+}
+
+#linechart .y-axis-title {
+  font-size: 2.5rem;
+}
+
+#linechart .axis text {
+  font-size: 4em;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+g.axis.x-axis.linechart g.tick > text {
+  transform: rotate(-60deg);
+  text-anchor: end;
+  fill: black;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.mouse-text {
+  font-size: 4em;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+#linechart .y-axis-title {
+  font-size: 3rem;
+}
+
+#linechart .axis text {
+  font-size: 2.7em;
+}
+
+.values,
+.yearValue {
+  font-size: 3em;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+#linechart .box-label {
+  font-size: 3em;
+}
+
+.mouse-text {
+  font-size: 3em;
+}
+
+/* -------------------  Bigger Screens -----------------------*/
+@media only screen and (min-width: 1300px) and (max-width: 1749px) {
+  #linechart .y-axis-title {
+    font-size: 2.7rem;
+  }
+
+  #linechart .axis text {
+    font-size: 3.5em;
+  }
+
+  .mouse-text {
+    font-size: 4em;
+  }
+
+  .values,
+  .yearValue {
+    font-size: 4em;
+  }
+
+  #linechart .legend-box {
+    width: 25px;
+    height: 25px;
+  }
+
+  #linechart .box-label {
+    font-size: 4em;
+    transform: translate(15px, 6px);
+  }
+
+}
+
+@media only screen and (min-width: 1750px) {
+  #linechart .y-axis-title {
+    font-size: 2.7rem;
+  }
+
+  #linechart .axis text {
+    font-size: 3.5em;
+  }
+
+  .mouse-text {
+    font-size: 4em;
+  }
+
+  .values,
+  .yearValue {
+    font-size: 4em;
+  }
+
+  #linechart .legend-box {
+    width: 25px;
+    height: 25px;
+  }
+
+  #linechart .box-label {
+    font-size: 4em;
+    transform: translate(15px, 4px);
+  }
+}
